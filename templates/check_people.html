@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href='{%  static "fonts.css" %}'>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Fira+Sans+Extra+Condensed|Lobster|Open+Sans+Condensed:300|Oswald|Pacifico" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="height: 80px; background: darkslategray; min-width: 100%;">
+                <a href="/"><img src='{%  static "apple-icon-72x72.png" %}' align="left"></a>
+                <h1 class="font6" style="color: #e24a46; margin-top: 14px;">&#8195;Невыезд зарубеж</h1>
+            </div>
+        </div>
+        <div class="row" style="min-height: 600px; background: #c6e0c6;">
+           <div class="col-12>" style="margin-top: 10px; margin-left: 10px;">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                  <a class="flex-sm-fill text-sm-center nav-link" href="#">Главная</a>
+                  <a class="flex-sm-fill text-sm-center nav-link" href="#">Демо режим</a>
+                  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Проверить невыезд</a>
+                  <a class="flex-sm-fill text-sm-center nav-link" href="#">Партнерам</a>
+                  <a class="flex-sm-fill text-sm-right nav-link" href="#">Пополнить счет</a>
+                </nav>
+           </div>
+            <div class="col-12">
+                        <div class="alert alert-success" role="alert">
+                          <h2 class="font3" style="font-size: 20px; color: black;">Проверка на невыезд зарубеж, зачем она нужна?</h2>
+                            <div align="justify" style="font-size: 16px;">
+                                Начнем с причин о которых вы <b>ничего не знаете</b>. Таких причин, как рассказывают очевидцы, не так уж и мало.
+                                Прежде всего - это ошибки или не аккуратность ГИБДД, судов, ФССП, МВД, налоговой и прочих ведомств, которые к <i>&laquo; судьбам людей&raquo;</i> подходят не всегда
+                                с должной щепитильностью. Забывают снять оплаченные штрафы, провести по базам данных последние корректировки, перепутать фамилию или имя, и допускают еще бог
+                                знает какие оплошности. Как сказал один литературный герой: &laquo;Все мы делаем ошибки, ибо мы человеки&raquo;.
+                                <br>&#8195;
+                                <br>Еще одна досадная причина появления отметки о невыезде - это медлительность системы. Долг давно погашен, все банковские претензии сняты, но невыезд все
+                                еще висит. Должностные лица ссылаются в этом случае на суды, что невыезд - это было решение суда, а мы то банк (налоговая и.т.д.) и не можем такое решение отменить. Есть и еще более
+                                возмутительные факты, когда невыезд наложиди ФСПП, но &laquo;признаться&raquo; они в этом не хотят и потому снимать ограничение на выезд зарубеж не торопятся.
+                                <br>&#8195;
+                                <br>Ну и, конечно, самый частый невыезд - это результат просроченных долгов, не уплаченных штрафов, алиментов, пени и взысканий, а так же прочих государственных поборов виноват
+                                в которых (увы и ах...) сам гражданин, который стал невыездным.
+                                <br>&#8195;
+                                <br>Более редкие случаи, это официальный невыезд, связанный с секретностью (которая может быть и уже погашенной!!!), подписки о невыезде, федеральный (или любой другой) розыск,
+                                нарушение режима въезда/выезда в то или иное государство (при этом невыезд из России невозможен в конкретную страну) и прочие варианты, знать о которых гражданин был должен,
+                                но по какой то причине не знал или думал иначе.
+                                <br>&#8195;
+                                <br><a href="#">Подробнее об этом</a> вы можете прочитать в изложении конкретных действующих должностных лиц на нашей странице <a href="#">facebook</a>  или <a href="#">vk</a>.
+                            </div>
+                        </div>
+             </div>
+         </div>
+    </div>
+</body>
+</html>

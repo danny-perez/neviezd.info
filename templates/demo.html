@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href='{%  static "fonts.css" %}'>
+    <link href="https://fonts.googleapis.com/css?family=Caveat|Fira+Sans+Extra+Condensed|Lobster|Open+Sans+Condensed:300|Oswald|Pacifico" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12" style="height: 80px; background: darkslategray; min-width: 100%;">
+                <a href="/"><img src='{%  static "apple-icon-72x72.png" %}' align="left"></a>
+                <h1 class="font6" style="color: #e24a46; margin-top: 14px;">&#8195;Невыезд зарубеж</h1>
+            </div>
+        </div>
+        <div class="row" style="min-height: 600px; background: #c6e0c6;">
+           <div class="col-12>" style="margin-top: 10px; margin-left: 10px;">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                  <a class="flex-sm-fill text-sm-center nav-link" href="/">Главная</a>
+                  <a class="flex-sm-fill text-sm-center nav-link active" href="#">Демо режим</a>
+                  <a class="flex-sm-fill text-sm-center nav-link" href="/check_neviezd">Проверить невыезд</a>
+                  <a class="flex-sm-fill text-sm-center nav-link" href="/parthners">Партнерам</a>
+                  <a class="flex-sm-fill text-sm-right nav-link" href="/pay_money">Пополнить счет</a>
+                </nav>
+           </div>
+            <div class="col-12">
+                        <div class="alert alert-success" role="alert" style="min-height: 500px;">
+                          <h2 class="font6" style="font-size: 20px; color: black;">Что такое демо-режим</h2>
+                            <h6>В демо режиме вы можете испытать все функции системы. Есть только одно "но" - на любые ваши запросы сервер выдает демонстрационные данные, никак не связанные с вами.
+                            Все остальное: валидация полей, прохождение реальных запросов на сервер, получение реальных данных с сервера, и, даже, списание комиссии за запрос, происходит как при платном использовании.</h6>
+                            <div class="row">
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Фамилия</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="Дихтер">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Имя</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="Святослав">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Отчество</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="Яковлевич">
+                                </div>
+
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Год рождения</label>
+                                    <input type="date" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Серия паспорта</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="4508">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Номер паспорта</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="611319">
+                                </div>
+
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Серия и номер водит. удостоверения</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="5001 200982">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Серия и номер ПТС вашего автомобиля</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" value="45TE 208923">
+                                </div>
+                                <div class="form-group col-4">
+                                    <label for="exampleFormControlInput1">Ваш ИНН</label>
+                                    <input type="number" class="form-control" id="exampleFormControlInput1" value="7745611319">
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-outline-primary">Отправить запрос</button>
+                        </div>
+             </div>
+         </div>
+    </div>
+</body>
+</html>
